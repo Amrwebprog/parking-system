@@ -2,6 +2,7 @@ import { House } from "lucide-react";
 import Index from "../Pages/ParkingSystemPortfolio/Pages/Index";
 
 import EmployeIndex from "../Pages/EmployePanel/Pages/EmployeIndex";
+import ChoseGate from "../Pages/ParkingSystemPortfolio/Gate/GatePages/ChoseGate";
 
 export type Role = "Admin" | "Employee" | "User";
 export type RoutesType = {
@@ -16,21 +17,11 @@ export type RoutesType = {
 };
 export const Routes: RoutesType[] = [
   {
-    PagePath: "aa",
-    Pagetitle: "HomePage",
+    PagePath: "/gate",
+    Pagetitle: "Gate Page",
     TitleIcon: <House />,
-    Element: <Index />,
+    Element: <ChoseGate />,
     hasPermission: false,
     Permission: "User",
-    OuterClassName: "bg-black",
-  },
-
-  {
-    PagePath: "/bb",
-    Pagetitle: "HomePage",
-    TitleIcon: <House />,
-    Element: <EmployeIndex />,
-    hasPermission: true,
-    Permission: "Employee",
   },
 ];

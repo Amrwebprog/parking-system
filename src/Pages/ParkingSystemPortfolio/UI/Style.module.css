@@ -1,0 +1,55 @@
+.wum {
+  color: #f1cf63;
+  text-align: center;
+  font-family: "Open Sans Condensed", sans-serif;
+  background-image: url("top-view-electric-cars-parking-lot.jpg");
+  background-color: #cbc5b6;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: calc(100vh - 71px);
+  line-height: 1.5em;
+  padding: 8em 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wum-r1 {
+  font-size: clamp(2rem, 6vw, 8rem);
+  font-weight: 700;
+  line-height: 1.1em;
+  text-transform: uppercase;
+}
+
+.wum-small {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-size: 0.37em;
+  line-height: 1.35em;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -0.44em;
+  padding-right: 0.2em;
+  border: 0.3em solid #f1cf63;
+  border-right: 0;
+  border-left: 0;
+  text-transform: lowercase;
+}
+
+@media screen and (max-width: 768px) {
+  .wum {
+    padding: 4em 1em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wum {
+    padding: 2em 1em;
+  }
+
+  .wum-r1 {
+    font-size: clamp(1.5rem, 8vw, 3rem);
+  }
+}

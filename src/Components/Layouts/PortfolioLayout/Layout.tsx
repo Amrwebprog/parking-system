@@ -2,7 +2,7 @@ import React from "react";
 
 function Layout({
   children,
-  innerClassName,
+  innerClassName = "",
   OuterClassName = "bg-white",
 }: {
   children: React.ReactNode;

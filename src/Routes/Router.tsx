@@ -38,7 +38,6 @@ export const Router = createBrowserRouter(
         );
       })}
 
-      {/* صفحة 404 مستقلة */}
       <Route path="*" element={<h1>Page Not Found</h1>} />
     </>
   )
